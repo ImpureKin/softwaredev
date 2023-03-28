@@ -22,7 +22,7 @@
   <distributionManagement>
     <repository>
       <id>myrepo</id>
-      <url>file:C:\Users\Big Pops\Desktop\JavaProjects\development</url>
+      <url>file:C:\Program Files\JavaProjects\development</url>
     </repository>
   </distributionManagement>
 
