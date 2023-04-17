@@ -1,4 +1,4 @@
-package com.example;
+package uts.eren;
 public class User {
     private String email;
     private String name;

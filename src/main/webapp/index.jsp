@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="com.example.User" %>
+<%@ page import="uts.eren.User" %>
 <!DOCTYPE html>
 <html>
 <head>
