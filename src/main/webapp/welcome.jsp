@@ -20,7 +20,7 @@
 	%>
 	<p>Welcome, <%= name %>!</p>
 	<p>Your email is: <%= email %></p>
-    <p>Your password is: <%= password %></p>
+        <p>Your password is: <%= password %></p>
 	<p>Your gender is: <%= gender %></p>
 	<p>Your favorite color is: <%= favcol %></p>
 	<%

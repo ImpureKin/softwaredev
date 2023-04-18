@@ -16,12 +16,18 @@
         <% 
         // get the user
         User user = (User) session.getAttribute("User");
-
+        if (user != null) {
         // Get name and email
         String name = user.getName();
         String email = user.getEmail();
         %>
         <p>You are logged in as <%=name%> (<%=email%>)</p>
         <a href="logout.jsp">Logout</a>
+        <br>
+        <p><a href="edit_user.jsp">My Account</a></p>
+        <% } else { %>
+        <p>You are not logged in.</p>
+        <a href="one.jsp">Register</a>
+        <% } %>
     </body>
 </html>

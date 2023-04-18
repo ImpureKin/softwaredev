@@ -13,7 +13,7 @@
         <title>Logged Out</title>
 </head>
     <body>
-        <p>You have been logged out. Click <a href="one.jsp">here</a> to return to the main page.</p>
+        <p>You have been logged out. Click <a href="index.jsp">here</a> to return to the main page.</p>
         <%session.invalidate();%>
     </body>
 </html>

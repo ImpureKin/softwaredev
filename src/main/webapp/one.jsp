@@ -21,8 +21,8 @@
 
             if (submitted != null && submitted.equals("yes")) {
             %>
-            <body bgcolor="favcol">
-                <h1>Welcome</h1>
+            <body>
+                <h1>Registration Successful.</h1>
                 <%
                 String tos = request.getParameter("tos");
                 if (tos != null && tos.equals("true")) {
