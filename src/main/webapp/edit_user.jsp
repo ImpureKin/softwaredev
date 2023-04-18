@@ -15,15 +15,15 @@
             <%
             // Retrieve the value (if any) of the form field called 'submitted'
 
-            String submitted =  request.getParameter("submitted"); 
+            String submitted =  request.getParameter("submitted");
+            
+            // Get user
+            User user = (User) session.getAttribute("User");
 
             // If the Java variable 'submitted' is not null AND 'submitted' equals "yes"
 
             if (submitted != null && submitted.equals("yes")) {
                 // Update existing user details
-                    
-                // Get user
-                    User user = (User) session.getAttribute("User");
                     
                 // Get input from My Account form
                     String email = request.getParameter("email");
@@ -42,7 +42,7 @@
                     if (!password.isEmpty()) {
                     user.setPassword(password);
                 }
-                    if (!gender.isEmpty()) {
+                    if (gender != null) {
                     user.setGender(gender);
                 }
                     if (!favcol.isEmpty()) {
@@ -58,6 +58,11 @@
             <body>
             <h1>My Account</h1>
             <form action="edit_user.jsp" method="POST">
+                
+                    <p>Your email is: <%= user.getEmail() %></p>
+                    <p>Your password is: <%= user.getPassword() %></p>
+                    <p>Your gender is: <%= user.getGender() %></p>
+                    <p>Your favorite color is: <%= user.getFavouriteColour() %></p>
                     <table>
                         <tr>
                                 <td><label for="email">Email:</label></td>
